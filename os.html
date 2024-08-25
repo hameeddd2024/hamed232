@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="os.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./صور4/الشعار.jpg"  alt="">
+        </div>
+        <nav>
+            <ul class="mean">
+                <li><a href="porgrame2.html"  target="_blank" >اختبارات سابقة</a></li>
+                <li><a href="page4.html"  target="_blank">كورسات</a></li>
+                <li><a href="#"  target="_blank">Adout</a></li>
+                <li><a href="#"  target="_blank">conthaaf</a></li>
+            </ul>
+            <img src="./صور4/1.png" id="toggle" alt="">
+        </nav>
+        </header>                  
+      
+    <h2 class="title">نضم التشغيل</h2>
+
+    <div class="content">
+
+        <div class="card">
+            <div class="card-imge">
+        <video class="mmm" controls  poster="./صور3/نضام التشغيل (1).jpg">
+            <source src="./فديو نضم التشغيل/نضم التشغيل.mp4">
+                </video> 
+            </div>
+            <div class="card-info">
+                <h4 class="card-p"> <span>5</span></h4>
+                <strong class="card-title">
+            
+                    <a href="page3.html" class="card-lenk" target="_blank">  تشغيل</a>
+                </strong>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-imge">
+        <video class="mmm" controls  poster="./صور3/نضام التشغيل (1).jpg">
+            <source src="./فديو html/Learn_HTML_In_Arabic_2021_-_#05_-_Comments_And_Use_Cases(720p).mp4">
+                </video> 
+            </div>
+            <div class="card-info">
+                <h4 class="card-p"> <span>5</span></h4>
+                <strong class="card-title">
+            
+                    <a href="page3.html" class="card-lenk" target="_blank">  تشغيل</a>
+                </strong>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script >
+    
+    const mean = document.querySelector('.mean');
+    const toggle = document.getElementById('toggle');
+    
+    toggle.onclick = function () {
+        mean.classList.toggle('active');
+    }
+    
+    
+    // start img
+    
+    function chanenImg(img) {
+        var singleImg = document.querySelector('#singleImg');
+        singleImg.setAttribute('src', img)
+    }
+    
+    // End img
+    </script>
+    
+</html>
